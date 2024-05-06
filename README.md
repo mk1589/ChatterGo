@@ -11,3 +11,4 @@ To run this Go project, follow these steps:
 1.  **Clone the Repository**
 2.  **$ go mod tidy**
 3.  **$ go run main.go**
+<img title="project image" alt="Alt text" src="/img/image.png">
