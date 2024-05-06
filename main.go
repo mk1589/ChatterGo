@@ -8,6 +8,11 @@ import (
 	"time"
 )
 
+const (
+	Yellow = "\033[1;33m"
+	White  = "\033[0m"
+)
+
 type User struct {
 	ID   int
 	Name string
@@ -47,7 +52,18 @@ func viewMessageLog(userID int) {
 }
 
 func main() {
-	fmt.Println("Welcome to the messaging application!")
+
+	var chatterGoSymbol = fmt.Sprintf(`%v
+	 ___   ____                         
+        /  __| / ___|  ___   
+       | |    | |  _  / _ \ 
+       | |__  | |_| || (_) | 
+        \____|\_____| \___/ 
+                             
+	   
+		%v `, Yellow, White)
+	fmt.Println(chatterGoSymbol)
+	fmt.Println("Welcome to the chatterGo!")
 	for {
 		fmt.Println("1. Send Message between two users")
 		fmt.Println("2. Broadcast Message to all users")
